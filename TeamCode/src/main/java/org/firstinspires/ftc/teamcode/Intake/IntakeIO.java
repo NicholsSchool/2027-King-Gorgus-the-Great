@@ -6,6 +6,10 @@ public interface IntakeIO {
 
         double intakeCurrent = 0.0;
         double intakePower = 0.0;
+        boolean leftDistance = false;
+        boolean middleDistance = false;
+        boolean rightDistance = false;
+        boolean overallVerdict = false;
 
     }
 

@@ -1,11 +1,7 @@
 package org.firstinspires.ftc.teamcode.FIntake;
 
-import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
-
-import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
-import org.firstinspires.ftc.teamcode.Intake.IntakeIO;
 
 public class FIntakeIOReal implements FIntakeIO{
 
@@ -25,6 +21,9 @@ public class FIntakeIOReal implements FIntakeIO{
         inputs.fIntakeUp = fIntakeUp;
     }
 
+    /**
+     * @param position the position to set the FIntake to
+     */
     @Override
     public void setPosition(double position){
         fIntake.setPosition(position);

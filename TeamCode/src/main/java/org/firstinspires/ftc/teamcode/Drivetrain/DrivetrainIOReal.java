@@ -5,14 +5,13 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
-import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
-import org.firstinspires.ftc.robotcore.external.navigation.Pose2D;
 import org.firstinspires.ftc.teamcode.math_utils.PoseEstimator;
 
 public class DrivetrainIOReal implements DrivetrainIO{
 
     //GoBilda 500 rpm motors
     public DcMotorEx frontRight, frontLeft, backRight, backLeft;
+
     //Kickstands on the bottom of the robot
     public Servo leftFoot, rightFoot;
 

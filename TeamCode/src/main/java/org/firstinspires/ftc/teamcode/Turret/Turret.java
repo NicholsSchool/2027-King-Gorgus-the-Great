@@ -1,9 +1,5 @@
 package org.firstinspires.ftc.teamcode.Turret;
 
-import com.qualcomm.robotcore.hardware.HardwareMap;
-
-import org.firstinspires.ftc.teamcode.Transfer.TransferIO;
-
 public class Turret implements TurretConstants{
 
     private final TurretIO io;
