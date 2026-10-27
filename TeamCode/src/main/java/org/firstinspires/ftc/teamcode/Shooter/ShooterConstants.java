@@ -14,5 +14,7 @@ public interface ShooterConstants {
 
     double nectarConstantVelocity = 0.0; //TODO: change Nectar constant velocity
     double pollenConstantVelocity = 0.0; //TODO: Change Pollen constant velocity
+    double nectarConstantPower = 0.0; //TODO: change Nectar constant Power
+    double pollenConstantPower = 0.0; //TODO: Change Pollen constant Power
 
 }

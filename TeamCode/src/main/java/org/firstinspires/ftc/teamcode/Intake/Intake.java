@@ -14,6 +14,7 @@ public class Intake implements IntakeConstant{
         this.io = io;
     }
 
+    public void periodic(){}
 
     public void intake(){
         io.setIntakePower(intakePower);
@@ -22,6 +23,8 @@ public class Intake implements IntakeConstant{
     public void outtake(){
         io.setIntakePower(outtakePower);
     }
+
+    public void off(){ io.setIntakePower(0); }
 
     /**
      * @return The current of the Intake Motor in Amps

@@ -3,9 +3,6 @@ package org.firstinspires.ftc.teamcode.Turret;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
-import org.firstinspires.ftc.teamcode.Intake.IntakeIO;
-
 public class TurretIOReal implements TurretIO{
 
     public CRServo turret;

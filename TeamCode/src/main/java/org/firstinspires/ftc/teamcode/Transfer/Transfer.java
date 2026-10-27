@@ -10,6 +10,8 @@ public class Transfer implements TransferConstants{
         this.io = io;
     }
 
+    public void periodic(){}
+
     public void feed(){
         io.setTransferPower(feedPower);
     }
@@ -17,6 +19,8 @@ public class Transfer implements TransferConstants{
     public void backfeed(){
         io.setTransferPower(backfeedPower);
     }
+
+    public void off(){ io.setTransferPower(0); }
 
     /**
      * @return the current of the Transfer Motor in Amps

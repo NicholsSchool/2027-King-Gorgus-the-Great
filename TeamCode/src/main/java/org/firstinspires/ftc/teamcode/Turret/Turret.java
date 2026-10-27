@@ -10,9 +10,12 @@ public class Turret implements TurretConstants{
     private final TurretIO.TurretIOInputs inputs = new TurretIO.TurretIOInputs();
     public Turret(TurretIO io){this.io = io;}
 
+    public void periodic(){}
+
     public void setVariableTurretPower(double power){
         io.setTurretPower(power);
     }
+
     public double getTurretPower(){
         return inputs.turretPower;
     }

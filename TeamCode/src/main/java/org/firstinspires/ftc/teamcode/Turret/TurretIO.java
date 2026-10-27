@@ -1,7 +1,5 @@
 package org.firstinspires.ftc.teamcode.Turret;
 
-import org.firstinspires.ftc.teamcode.Intake.IntakeIO;
-
 public interface TurretIO {
 
     public static class TurretIOInputs{

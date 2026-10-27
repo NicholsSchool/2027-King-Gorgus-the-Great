@@ -7,14 +7,21 @@ public class Shooter implements ShooterConstants, ShooterIO {
 
     public Shooter(ShooterIO io) {this.io = io;}
 
-    public void revShooterWheelsPower(){ //TODO: Edit the Power Values
-        io.setNectarPower(1.0);
-        io.setPollenPower(1.0);
+    public void periodic(){}
+
+    public void revShooterWheelsPower(){
+        io.setNectarPower(nectarConstantPower);
+        io.setPollenPower(pollenConstantPower);
     }
 
-    public void revShooterWheelsVelocity(){ //TODO: Edit the Velocity Values
-        io.setNectarVelocity(100.0);
-        io.setPollenVelocity(100.0);
+    public void revShooterWheelsVelocity(){
+        io.setNectarVelocity(nectarConstantVelocity);
+        io.setPollenVelocity(pollenConstantVelocity);
+    }
+
+    public void turnOffShooters(){
+        io.setNectarVelocity(0.0);
+        io.setPollenVelocity(0.0);
     }
 
 }
